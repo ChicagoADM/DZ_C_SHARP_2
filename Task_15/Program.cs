@@ -39,3 +39,31 @@ void Zadacha15()
     }
 }
 Zadacha15();
+//___________________________________________________________
+void Zadacha15()
+{
+    Console.Clear();
+    Console.Write("Введите цифру дня недели от 1 до 7: ");
+    int number = Convert.ToInt32(Console.ReadLine());
+    string [] week = {"пн", "вт", "ср", "чт", "пт", "сб", "вс"};
+    
+    if (number > 0 && number < 8)
+    {
+        Console.WriteLine(week[number-1]);
+        if (number == 6 || number == 7 )
+        {
+            Console.WriteLine("Выходной день");
+        
+        }
+        else
+        {
+            Console.WriteLine("Рабочий день");
+        }
+
+    }
+    else
+    {
+        Console.WriteLine("Ошибка!!! Введите цифру дня недели от 1 до 7");
+    }
+}
+Zadacha15();
