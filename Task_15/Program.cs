@@ -14,3 +14,28 @@ else
 {
     Console.WriteLine("Выходной");
 }
+//_______________________________________________________________________________________________
+void Zadacha15()
+{
+    Console.Clear();
+    Console.Write("Введите цифру дня недели от 1 до 7: ");
+    int  number = Convert.ToInt32(Console.ReadLine());
+    if (number > 0 && number < 8)
+    {
+        if (number == 6 || number == 7 )
+        {
+            Console.WriteLine("Выходной день");
+        
+        }
+        else
+        {
+            Console.WriteLine("Рабочий день");
+        }
+
+    }
+    else
+    {
+        Console.WriteLine("Ошибка!!! Введите цифру дня недели от 1 до 7");
+    }
+}
+Zadacha15();
